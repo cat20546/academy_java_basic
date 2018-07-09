@@ -56,6 +56,7 @@ public class VarietyMethods {
 	 */
 	public void printNineNineTable(int stage) {
 		System.out.printf("%2d 단%n", stage);
+		
 		for (int times = 1; times < 10; times++) {
 			System.out.printf("%2d x %2d = %2d%n", stage, times, stage * times);
 		}
@@ -73,6 +74,7 @@ public class VarietyMethods {
 	public void printNineNineTableArray(int[] stages) {
 		for (int stage: stages) {
 			System.out.printf("%2d 단%n", stage);
+			
 			for (int times = 1; times < 10; times++) {
 				System.out.printf("%2d x %2d = %2d%n"
 						, stage, times, stage * times);
