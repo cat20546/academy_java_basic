@@ -31,19 +31,36 @@ public class Product {
 	// 1. 멤버 변수 선언부
 	/** 제품 코드 */
 	String prodCode;
+	/** 제품 명 */
 	String prodName;
+	/** 제품 가격 */
 	int price;
+	/** 재고 수량 */
 	int quantity;
 	
 	// 2. 생성자 선언부
+	/**
+	 * 기본 생성자
+	 */
 	Product() {
 		
 	}
 	
+	/**
+	 * 제품 코드 필드만 초기화하는 생성자
+	 * @param prodCode
+	 */
 	Product(String prodCode) {
 		this.prodCode = prodCode;
 	}
 	
+	/**
+	 * 모든 필드를 초기화하는 생성자
+	 * @param prodCode
+	 * @param prodName
+	 * @param price
+	 * @param quantity
+	 */
 	Product(String prodCode, String prodName, int price, int quantity) {
 		this(prodCode);
 		this.prodName = prodName;
@@ -52,15 +69,22 @@ public class Product {
 	}
 	
 	// 3. 메소드 선언부
-	
+	/**
+	 * 제품 정보를 출력
+	 */
 	public void print() {
 		System.out.printf("제품 정보 [제품코드 : %s, 제품명 : %s"
 				         + ", 가격 %d: , 재고수량 : %d]%n"
 				         , prodCode, prodName, price, quantity);
 	}
 	
+	/**
+	 * 입력된 percentage만큼 할인을 진행할 경우
+	 * 판매 가격이 얼마가 되는지 계산하여 리턴
+	 * @param percentage
+	 * @return
+	 */
 	public int discount(double percentage) {
-		// percentage > 0
 		int price = this.price;
 		
 		if (percentage > 0) {
@@ -69,7 +93,11 @@ public class Product {
 		
 		return price;
 	}
-	
+
+	/**
+	 * 제품을 출고(판매)하고 재고 수량을 감소시킨다.	 
+	 * @param amount
+	 */
 	public void sell(int amount) {
 		// 재고 수량이 출고하려는 수량보다 크거나 같을때만
 		// 출고함.
@@ -78,6 +106,10 @@ public class Product {
 		}
 	}
 	
+	/**
+	 * 제품이 입고되어 재고 수량을 증가시킨다.
+	 * @param amount
+	 */
 	public void buy(int amount) {
 		// 입고된 만큼 재고수량 증가 후 저장반영
 		this.quantity += amount;		
