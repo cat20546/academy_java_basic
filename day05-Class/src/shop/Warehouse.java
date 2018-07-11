@@ -132,7 +132,9 @@ public class Warehouse {
 					newProducts[idx] = products[idx];
 				}
 			}
-		}
+			this.products = newProducts;
+			
+		} // outer if end
 	} // method remove end
 	
 	/**
