@@ -79,6 +79,17 @@ public class ListTest {
 		for (int idx = 0; idx < list.size(); idx++) {
 			System.out.println(list.get(idx));
 		}
+		
+		// (3) 리스트에 들어있는 객체가 Product 타입이면
+		//     입고 기능을 쓰고 싶다.
+		System.out.println("=== Product 의 buy(), print() 사용 ===");
+		for (Object obj: list) {
+			if (obj instanceof Product) {
+				Product prod = (Product)obj;
+				prod.buy(100);
+				prod.print();
+			}
+		}
 	}
 
 }
