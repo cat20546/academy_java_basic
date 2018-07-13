@@ -19,14 +19,17 @@ public class ListWarehouse implements GeneralWarehouse {
 		products = new ArrayList<Product>();
 	}
 	
+	// (2) 매개 변수를 받는 생성자
 	public ListWarehouse(List<Product> products) {
 		this.products = products;
 	}
 
+	//  접근자
 	public List<Product> getProducts() {
 		return products;
 	}
 
+	// 수정자
 	public void setProducts(List<Product> products) {
 		this.products = products;
 	}
@@ -42,8 +45,7 @@ public class ListWarehouse implements GeneralWarehouse {
 		
 		return addCnt;
 	}
-
-
+	
 	@Override
 	public Product get(Product product) {
 		int getIndex = findProductIdx(product);
@@ -59,30 +61,35 @@ public class ListWarehouse implements GeneralWarehouse {
 
 	@Override
 	public int set(Product product) {
+		int setCnt = 0;
 		int setIdx = findProductIdx(product);
 		
 		if (setIdx > -1) {
 			products.set(setIdx, product);
+			setCnt++;
 		}
 		
-		return setIdx;
+		return setCnt;
 	}
 
 	@Override
 	public int remove(Product product) {
+		int rmCnt = 0;
 		int rmIdx = findProductIdx(product);
 		
 		if (rmIdx > -1) {
 			products.remove(rmIdx);
+			rmCnt++;
 		}
 		
-		return rmIdx;
+		return rmCnt;
 	}
 
 	@Override
 	public List<Product> getAllProducts() {		
 		return this.products;
 	}
+	
 	
 	// 리스트 안에 찾으려는 제품의 인덱스를 구하는 지원 메소드
 	private int findProductIdx(Product product) {

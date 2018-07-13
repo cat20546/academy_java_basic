@@ -86,10 +86,10 @@ public class Manager {
 	 * @param product
 	 */
 	public void set(Product product) {
-		int setIdx = warehouse.set(product);
+		int setCnt = warehouse.set(product);
 		String message = null;
 		
-		if (setIdx > -1) {
+		if (setCnt > 0) {
 			// 수정이 성공한 경우
 			message = String.format("제품 정보[%s]수정에 성공하였습니다."
 					              , product.getProdCode());
@@ -111,10 +111,10 @@ public class Manager {
 	 * @param product
 	 */
 	public void remove(Product product) {
-		int rmIdx = warehouse.remove(product);
+		int rmCnt = warehouse.remove(product);
 		String message = null;
 		
-		if (rmIdx > -1) {
+		if (rmCnt > 0) {
 			// 삭제 성공한 경우
 			message = String.format("제품 정보[%s]삭제에 성공하였습니다."
 					, product.getProdCode());

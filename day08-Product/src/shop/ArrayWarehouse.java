@@ -64,13 +64,9 @@ public class ArrayWarehouse implements GeneralWarehouse {
 		this.products = products;
 	}
 
-	// 3. 메소드 선언부
-	/**
-	 * 제품 선반 가장 마지막에 추가
-	 * 제품 선반 크기를 1 증가시키면서 추가
-	 * @param product
-	 */
+	// 3. 메소드 선언부	
 	public int add(Product product) {
+		int addCnt = 0;
 		int oldSize = this.products.length;
 		
 		// 이미 존재하는 배열의 크기 + 1 길이로 복사
@@ -82,46 +78,42 @@ public class ArrayWarehouse implements GeneralWarehouse {
 		// 마지막 인덱스에 신규 제품 정보 입력
 		this.products[products.length - 1] = product;
 		
-		return (oldSize == newSize) ? 0 : 1;
+		// 신규 배열 사이즈가 기존 배열 사이즈보다 크면
+		// 한 칸이 늘어나고 추가가 되었다는 것으로 간주하여
+		// addCnt 를 1 증가시킴
+		if (newSize > oldSize) {
+			addCnt++;
+		}
+		
+		return addCnt;
 	}
 	
-	/**
-	 * 파라미터로 전달된 정보와 일치하는 제품이 있는지
-	 * 검색하여 (prodCode 필드가 같으면 같은 제품으로 처리)
-	 * 일치하는 제품이 있으면 그 제품정보를 리턴
-	 * 없으면 null 을 리턴
-	 * 
-	 * @param product
-	 * @return
-	 */
 	public Product get(Product product) {
 		return findProduct(product); 
 	}
 	
-	/**
-	 * 매개변수로 넘겨진 제품 정보와 
-	 * 일치하는 제품코드를 가진 제품에 대해 
-	 * 입력된 값으로 수정하여 저장함
-	 * @param product
-	 */
 	public int set(Product product) {
+		// 수정 성공 건수
+		int setCnt = 0;
 		// 수정하고자 하는 제품의 인덱스
 		int setIndex = -1;
 				
 		if ((setIndex = findProductIdx(product)) > -1) {
 			products[setIndex] = product;
+			setCnt++;
 		}
 		
-		return setIndex;
+		// 수정 성공 건수를 리턴. 
+		// 기존 수정한 데이터의 인덱스 리턴에서 변경함
+		return setCnt;
 	}
 	
-	/**
-	 * 판매하지 않을 제품 정보를 폐기
-	 * @param product
-	 */
 	public int remove(Product product) {
+		// 삭제 성공 건수
+		int rmCnt = 0;
 		// 폐기할 제품이 위치하는 인덱스
 		int rmIndex = -1;
+		
 		rmIndex = findProductIdx(product);
 		
 		// 삭제 안된 제품을 유지할 새 배열
@@ -148,11 +140,16 @@ public class ArrayWarehouse implements GeneralWarehouse {
 					newProducts[idx] = products[idx];
 				}
 			}
+			
+			rmCnt++;
 			this.products = newProducts;
 			
 		} // outer if end
 		
-		return rmIndex;
+		// 삭제 성공 건수를 리턴
+		// 기존 삭제 인덱스 리턴에서 변경함
+		return rmCnt;
+		
 	} // method remove end
 	
 	/**
