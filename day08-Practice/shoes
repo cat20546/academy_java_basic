@@ -42,3 +42,50 @@ main 메소드에서
 
 8. 삭제된 신발의 정보가 shoes 에 없는 것을 출력(전체 출력)
 
+=============================================
+package : shoes.list, shoes.map, shoes.set
+---------------------------------------
+ShoeList : shoes.list 패키지에 추가할 class
+ShoeSet : shoes.set 패키지에 추가할 클래스
+ShoeMap : shoes.map 패키지에 추가할 클래스
+---------------------------------------
+멤버변수 영역
+- shoes : List<Shoe> 
+- shoes : Set<Shoe> 
+- shoes : Map<String, Shoe> 
+---------------------------------------
+생성자 영역
++ 기본생성자 : shoes 를 직접 ArrayList<Shoe> 로 초기화 
++ 기본생성자 : shoes 를 직접 HashSet<Shoe> 로 초기화
++ 기본생성자 : shoes 를 직접 HashMap<String, Shoe> 로 초기화
++ 매개변수가 있는 생성자
+---------------------------------------
+메소드 영역
++ add(Shoe shoe) : int : 추가 성공 : 1, 추가 실패 : 0
++ set(Shoe shoe) : int : 수정 성공 : 1, 수정 실패 : 0
++ remove(Shoe shoe) : int : 삭제 성공 : 1, 삭제 실패 : 0
++ get(Shoe shoe) : Shoe : 조회 성공 : shoe, 조회 실패 : null
++ getAllShoes()  : List<Shoe> : 전체목록을 리턴
+---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
