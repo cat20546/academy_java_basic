@@ -3,10 +3,12 @@ package shop.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import shop.exception.DuplicateException;
+import shop.exception.NotFoundException;
 import shop.vo.Product;
 
 /**
- * 제품정보를 저장할 자료구를 리스트로 관리하는 창고 클래스
+ * 제품정보를 저장할 자료구조를 리스트로 관리하는 창고 클래스
  * @author PC38206
  *
  */
@@ -37,51 +39,64 @@ public class ListWarehouse implements GeneralWarehouse {
 	}
 
 	@Override
-	public int add(Product product) {
-		boolean success = products.add(product);
+	public int add(Product product) throws DuplicateException {
+		int index = findProductIdx(product);
 		int addCnt = 0;
 		
-		if (success) {
+		if (index == -1) {
+			products.add(product);
 			addCnt++;
+			
+		} else {
+			throw new DuplicateException("add", product);
 		}
 		
 		return addCnt;
 	}
 	
 	@Override
-	public Product get(Product product) {
+	public Product get(Product product) throws NotFoundException {
 		int getIndex = findProductIdx(product);
 		Product found = null;
 		
 		if (getIndex > -1) {
 			// 찾아올 제품이 존재
 			found = products.get(getIndex); 
-		} 
+			
+		} else {
+			throw new NotFoundException("get", product);
+		}
 		
 		return found;
 	}
 
 	@Override
-	public int set(Product product) {
+	public int set(Product product) throws NotFoundException {
 		int setCnt = 0;
 		int setIdx = findProductIdx(product);
 		
 		if (setIdx > -1) {
 			products.set(setIdx, product);
 			setCnt++;
+			
+		} else {
+			throw new NotFoundException("set", product);
 		}
 		
 		return setCnt;
 	}
 
 	@Override
-	public int remove(Product product) {
+	public int remove(Product product) throws NotFoundException {
 		int rmCnt = 0;
 		int rmIdx = findProductIdx(product);
 		
 		if (rmIdx > -1) {
 			products.remove(rmIdx);
 			rmCnt++;
+			
+		} else {
+			throw new NotFoundException("remove", product);
 		}
 		
 		return rmCnt;
