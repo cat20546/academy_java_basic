@@ -114,6 +114,7 @@ public class JdbcWarehouse implements GeneralWarehouse {
 			Class.forName(DRIVER);
 			
 			// 2. 커넥션 맺기
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
 			
 			// 3. 쿼리 준비
 			String sql = "SELECT p.prodcode" 
@@ -169,20 +170,201 @@ public class JdbcWarehouse implements GeneralWarehouse {
 
 	@Override
 	public int set(Product product) throws NotFoundException {
-		// TODO Auto-generated method stub
-		return 0;
+		// 추가하려는 제품이 이미 존재하는지 검사
+		if (!isExists(product)) {
+			throw new NotFoundException("수정", product);
+		}
+		
+		// 0. 필요 객체 선언
+		int setCnt = 0;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			// 1. 드라이버 로드
+			Class.forName(DRIVER);
+			
+			// 2. 커넥션 맺기
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
+			
+			// 3. 쿼리 준비
+			String sql = "UPDATE product p     "  
+					   + "   SET p.PRODNAME = ?" 
+					   + "     , p.PRICE    = ?" 
+					   + "     , p.QUANTITY = ?" 
+					   + "     , p.MODDATE  = sysdate" 
+					   + " WHERE p.PRODCODE = ?";
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, product.getProdName());
+			pstmt.setInt(2, product.getPrice());
+			pstmt.setInt(3, product.getQuantity());
+			pstmt.setString(4, product.getProdCode());
+			
+			// 4. 쿼리 실행
+			setCnt = pstmt.executeUpdate();
+			
+			// 5. 결과 처리
+			//   ==> 쿼리 실행 전 중복 여부 검사하므로 특별한
+			//       결과 처리가 필요 없음
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		} finally {
+			// 6. 자원 해제
+			try {
+				if (pstmt != null) {
+					pstmt.close();					
+				}
+				if (conn != null) {
+					conn.close();
+				}
+				
+			} catch (SQLException e) {
+				System.err.println("자원 반납 오류!");
+				e.printStackTrace();
+				
+			}
+		}
+		
+		return setCnt;
 	}
 
 	@Override
 	public int remove(Product product) throws NotFoundException {
-		// TODO Auto-generated method stub
-		return 0;
+		// 추가하려는 제품이 이미 존재하는지 검사
+		if (!isExists(product)) {
+			throw new NotFoundException("삭제", product);
+		}
+		
+		// 0. 필요 객체 선언
+		int rmCnt = 0;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			// 1. 드라이버 로드
+			Class.forName(DRIVER);
+			
+			// 2. 커넥션 맺기
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
+			
+			// 3. 쿼리 준비
+			String sql = "DELETE product p ";			
+			sql       += " WHERE p.prodcode = ?";
+				
+			pstmt = conn.prepareStatement(sql);			
+			pstmt.setString(1, product.getProdCode());
+			
+			// 4. 쿼리 실행
+			rmCnt = pstmt.executeUpdate();
+			
+			// 5. 결과 처리
+			//   ==> 쿼리 실행 전 중복 여부 검사하므로 특별한
+			//       결과 처리가 필요 없음
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		} finally {
+			// 6. 자원 해제
+			try {
+				if (pstmt != null) {
+					pstmt.close();					
+				}
+				if (conn != null) {
+					conn.close();
+				}
+				
+			} catch (SQLException e) {
+				System.err.println("자원 반납 오류!");
+				e.printStackTrace();
+				
+			}
+		}
+		
+		return rmCnt;
 	}
 
 	@Override
 	public List<Product> getAllProducts() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		// 0. 필요 객체 선언
+		List<Product> products = new ArrayList<>();
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet result = null;
+		
+		try {
+			// 1. 드라이버 로드
+			Class.forName(DRIVER);
+			
+			// 2. 커넥션 맺기
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
+			
+			// 3. 쿼리 준비
+			String sql = "SELECT p.prodcode" 
+			           + "     , p.prodname" 
+					   + "     , p.price   " 
+			           + "     , p.quantity" 
+					   + "  FROM product p ";
+			
+			pstmt = conn.prepareStatement(sql);
+			
+			// 4. 쿼리 실행
+			result = pstmt.executeQuery();
+			
+			// 5. 결과 처리
+			while (result.next()) {
+				String prodCode = result.getString(1);
+				String prodName = result.getString(2);
+				int price = result.getInt(3);
+				int quantity = result.getInt(4);
+				
+				Product product = 
+						new Product(prodCode, prodName
+								  , price, quantity);
+				
+				products.add(product);
+			}
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			
+		} finally {
+			// 6. 자원 해제
+			try {
+				if (result != null) {
+					result.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();					
+				}
+				if (conn != null) {
+					conn.close();
+				}
+				
+			} catch (SQLException e) {
+				System.err.println("자원 반납 오류!");
+				e.printStackTrace();
+			}
+		}
+		
+		return products;
 	}
 	
 	

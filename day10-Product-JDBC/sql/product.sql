@@ -40,7 +40,22 @@ SELECT p.prodcode
  WHERE p.prodcode = ?  
 
 
+-- 5. set() : 제품 정보 수정
+UPDATE product p
+   SET p.PRODNAME = ?
+     , p.PRICE = ?
+     , p.QUANTITY = ?
+     , p.MODDATE = sysdate
+ WHERE p.PRODCODE = ?
 
+-- 6. remove() : 제품 정보 삭제
+DELETE product p
+ WHERE p.PRODCODE = ? 
 
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
