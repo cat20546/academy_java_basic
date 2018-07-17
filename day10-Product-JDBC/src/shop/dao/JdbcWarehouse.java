@@ -27,18 +27,9 @@ public class JdbcWarehouse implements GeneralWarehouse {
 	private static final String PASSWORD = "TIGER";
 	private static final String DRIVER = "oracle.jdbc.OracleDriver";
 
-	// 1. 멤버 변수 선언
-	//    DB 에 저장된 데이터를 묶어서 저장할 List 변수
-	private List<Product> products;
-	
 	// 2. 생성자 선언
-	public JdbcWarehouse() {
-		this.products = new ArrayList<>();
-	}
+	public JdbcWarehouse() { }
 	
-	public JdbcWarehouse(List<Product> products) {
-		this.products = products;
-	}
 
 	@Override
 	public int add(Product product) throws DuplicateException {
