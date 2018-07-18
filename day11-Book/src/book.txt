@@ -34,15 +34,15 @@ interface : BookShelf (책장개념)
 class : ListBookShelf, SetBookShelf
         MapBookShelf, JdbcBookShelf
 =========================================
-JDBC 구현 전 생성할 테이블
+JDBC 구현 전 생성할 테이블 SCOTT 계정에 생성
 table : book
 bookid      VARCHAR2(5) 
-title       VARCHAR2(200)
-author      VARCHAR2(50)
+title       VARCHAR2(200)   NOT NULL
+author      VARCHAR2(50)    NOT NULL
 price       NUMBER(10)
 isbn        VARCHAR2(13)
 publish     VARCHAR2(30)
-regdate     DATE
+regdate     DATE    DEFAULT sysdate
 moddate     DATE
 
 PK : pk_book (bookid)
@@ -63,6 +63,11 @@ interface : BookView
 인터페이스 구현 클래스
 class : MessageView, ErrorView, SingleView, ListView
 =========================================
+package : book.test
+class : BookStore
+main 이 있는 클래스. 실제로 실행
+=========================================
+
 추가 
 1. view factory, 혹은 book shelf factory
    구현 가능하면 구현
@@ -73,3 +78,7 @@ class : MessageView, ErrorView, SingleView, ListView
 
 4. 책 내용은 교보문고 등을 검색하여
    있는 책으로 객체 생성할 것
+
+   
+   
+   
