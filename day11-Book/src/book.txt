@@ -23,11 +23,11 @@ NotFoundException
 package : book.dao
 interface : BookShelf (책장개념)
 -----------------------------------------
-+ insert(Book book) : 1건 입력
-+ update(Book book) : 1건 수정
-+ delete(Book book) : 1건 삭제
-+ select(Book book) : 1건 조회
-+ select() : 모든 책 정보 조회
++ insert(Book book) : int : 1건 입력
++ update(Book book) : int : 1건 수정
++ delete(Book book) : int : 1건 삭제
++ select(Book book) : int : 1건 조회
++ select() : List<Book> : 모든 책 정보 조회
 -----------------------------------------
 위의 인터페이스를 List, Set, Map, Jdbc 로 구현하는
 4개의 구현 클래스 작성
@@ -47,21 +47,21 @@ moddate     DATE
 
 PK : pk_book (bookid)
 =========================================
-package : book.controller
-class : BookManager
-+ insert(Book book) : 1건 입력
-+ update(Book book) : 1건 수정
-+ delete(Book book) : 1건 삭제
-+ select(Book book) : 1건 조회
-+ select() : 전체 목록 조회
-=========================================
 package : book.view
 interface : BookView
 -----------------------------------------
-+ display(Object object)
++ display(Object object) : void
 -----------------------------------------
 인터페이스 구현 클래스
 class : MessageView, ErrorView, SingleView, ListView
+=========================================
+package : book.controller
+class : BookManager
++ insert(Book book) : void : 1건 입력
++ update(Book book) : void : 1건 수정
++ delete(Book book) : void : 1건 삭제
++ select(Book book) : void : 1건 조회
++ select() : void : 전체 목록 조회
 =========================================
 package : book.test
 class : BookStore
