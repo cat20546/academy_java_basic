@@ -40,6 +40,9 @@ interface : BookShelf (책장개념)
 
 + totalCount() : int 
    : 전체 등록된 책의 개수를 구하여 리턴 
+   
++ delete() : int
+   : 등록된 전체 책 정보를 삭제후 삭제된 건수를 리턴   
 -----------------------------------------
 위의 인터페이스를 List, Set, Map, Jdbc 로 구현하는
 4개의 구현 클래스 작성
@@ -84,6 +87,9 @@ class : BookManager
     
 + totalCount() : void
     : 책의 전체 건수를 조회하여 출력
+    
++ delete() : void
+    : 전체 책 정보를 삭제하고 삭제된 건수를 출력
 
 =========================================
 package : book.test
