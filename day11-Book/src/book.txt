@@ -23,10 +23,10 @@ NotFoundException
 package : book.dao
 interface : BookShelf (책장개념)
 -----------------------------------------
-+ insert(Book book) : int : 1건 입력
-+ update(Book book) : int : 1건 수정
-+ delete(Book book) : int : 1건 삭제
-+ select(Book book) : int : 1건 조회
++ insert(Book book) : int  : 1건 입력
++ update(Book book) : int  : 1건 수정
++ delete(Book book) : int  : 1건 삭제
++ select(Book book) : Book : 1건 조회
 + select() : List<Book> : 모든 책 정보 조회
 -----------------------------------------
 위의 인터페이스를 List, Set, Map, Jdbc 로 구현하는
