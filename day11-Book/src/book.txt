@@ -82,7 +82,7 @@ class : BookManager
 + select(String keyword) : void
     : 책 title 에 keyword 가 들어있는 목록을 검색하여 출력
     
-+ totalCount() : int
++ totalCount() : void
     : 책의 전체 건수를 조회하여 출력
 
 =========================================
