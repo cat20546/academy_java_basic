@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- mybatis 에서 SQL 작성하는 문서 -->
+<mapper namespace="mybatis.emp.mapper.EmpMapper">
+    <select id="selectAll" resultType="map">
+        SELECT e.empno
+		     , e.ename
+		     , e.job
+		     , e.hiredate
+		     , e.comm
+		     , e.mgr
+		     , e.sal
+		     , e.deptno
+		  FROM emp e
+    </select>
+    
+    <select id="selectOne" parameterType="int"
+                           resultType="Emp">
+        SELECT e.empno
+		     , e.ename
+		     , e.job
+		     , e.hiredate
+		     , e.comm
+		     , e.mgr
+		     , e.sal
+		     , e.deptno
+		  FROM emp e
+         WHERE e.empno = #{value}
+         <!-- #{value} 는 prepared 에서 ? 와 같은 역할
+              쿼리 실행시 전달 값이 1개 이며
+              기본형 / String 형일 때만 사용 가능한 키워드 --> 
+    </select>
+    
+    <insert id="insert" parameterType="Emp">
+	    INSERT INTO emp e 
+	       ( e.empno
+	       , e.ename
+	       , e.hiredate
+	       , e.job
+	       )
+	    VALUES 
+	       ( #{empno}
+	       , #{ename}
+	       , sysdate
+	       , #{job} 
+	       )
+    </insert>
+</mapper>
+
+
+
+
+
+
+
+
