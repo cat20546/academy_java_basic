@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ELEMENT 를 정의할 때, 하위 엘리먼트의 포함관계를
+     명시할 때 열거형(,) 이나 선택(|)관계를 표기할 수 있다. -->
+<!-- 내부 DTD 선언 -->
+<!DOCTYPE products [
+    <!ELEMENT product (prodCode, prodName, (price | quantity), company) >
+	    <!ELEMENT prodCode (#PCDATA) >
+	    <!ELEMENT prodName (#PCDATA) >
+	    <!ELEMENT price    (#PCDATA) >
+	    <!ELEMENT quantity (#PCDATA) >
+	    <!ELEMENT company  (employee, empNo)* >
+	    
+	<!ELEMENT employee (#PCDATA) >
+	<!ELEMENT empNo    (#PCDATA) >
+]>
+<!--
+  "S001", "슈퍼스타", 87200, 5);
+  "S002", "리복 로얄 테크큐 티", 42000, 20);
+  "S003", "나이키 탄준 샌들", 41300, 30);
+  "S004", "라이트라이드 샌들 우먼", 40200, 7);
+  "S005", "지제 에바", 29000, 15);
+ -->
+<products>
+    <product>
+        <prodCode>S001</prodCode>
+        <prodName>슈퍼스타</prodName>
+        <price>87200</price>
+        <company/> 
+        <!-- (employee, empNo)* : *연산자에 의해 하위 엘리먼트 
+             아얘 등장하지 않아도 괜찮으므로 EMPTY 엘리먼트 
+             표기가 가능하다. -->
+    </product>
+    <product>
+        <prodCode>S002</prodCode>
+        <prodName>리복 로얄 테크큐 티</prodName>
+        <quantity>20</quantity>
+        <company>
+            <employee>김길동</employee>
+            <empNo>9999</empNo>
+        </company>
+        <!-- (employee, empNo)* : 규칙에 의해서 employee 가 등장하면
+              반드시 empNo 도 한 쌍으로 같이 등장해야 한다. -->
+    </product>
+    <product>
+        <prodCode>S003</prodCode>
+        <prodName>나이키 탄준 샌들</prodName>
+        <price>41300</price>
+        <company>
+            <employee>홍길동</employee>
+            <empNo>1111</empNo>
+            <employee>허균</employee>
+            <empNo>2222</empNo>
+        </company>
+    </product>
+    
+    <employee></employee>
+    <prodCode></prodCode>
+</products>
+
+
+
+
+
+

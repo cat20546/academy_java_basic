@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- academy 루트 엘리먼트를 정의하는 DTD 선언이
+     문서 내부에 같이 정의된 XML 작성 -->
+
+<!-- 내부 DTD 선언 -->
+<!DOCTYPE academy [
+    <!ELEMENT academy (subject*) >
+        <!ELEMENT subject (#PCDATA) >
+]> 
+<!-- XML 선언 -->
+<academy>
+    <subject>SQL</subject>
+    <subject>PL/SQL</subject>
+    <subject>JAVA</subject>
+    <subject>JDBC</subject>
+    <subject>XML</subject>
+    <subject>Mybatis</subject>
+    <subject>Servlet/JSP</subject>
+    <subject>Modeling</subject>
+    <subject>Spring Framework</subject>
+    <subject>project</subject>
+</academy>

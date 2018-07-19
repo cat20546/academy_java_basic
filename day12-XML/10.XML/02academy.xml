@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 청년취업 아카데미 구성 인원을 XML 로 정의 -->
+<academy location="50436" university="hannamUniv" 
+         startDate="2018-06-25" endDate="2018-08-31">
+    <instructors>
+        <subject>청년취업 아카데미 2018년 전체 과목</subject>
+        <instructor gender="F">
+            <name>채한나</name>
+            <subject>SQL, PL/SQL</subject>
+            <subject>Java</subject>
+            <subject>Servlet/JSP</subject>
+        </instructor>
+        <instructor gender="M">
+            <name>강신철</name>
+            <subject>Modeling</subject>
+        </instructor>
+        <instructor>
+            <name>오소진</name>
+            <subject>스프링 프레임워크</subject>
+            <subject>프로젝트</subject>
+        </instructor>
+    </instructors>
+    <students>
+        <student major="GIT">
+            <name>유재성</name>
+            <address>용운동</address>
+            <dwelling>통학</dwelling>
+        </student>
+        <student>
+            <name>윤홍식</name>
+            <address>오정동</address>
+            <dwelling>자취</dwelling>
+        </student>
+        <student major="GIT">
+            <name>조성철</name>
+            <address>오정동</address>
+            <dwelling>기숙사</dwelling>
+        </student>
+        <student major="japan">
+            <name>강병우</name>
+            <address>사정동</address>
+            <dwelling>통학</dwelling>
+        </student>
+        <student major="CE">
+            <name>이동희</name>
+            <address>법동</address>
+            <dwelling>통학</dwelling>
+        </student>
+    </students>
+    <employees>
+        <employee>
+            <name>백영현</name>
+            <dept>글로벌 IT 경영</dept>
+            <position>조교</position>
+        </employee>
+        <employee>
+            <name>박현길</name>
+            <dept>이노비즈 협회</dept>
+            <position>부장</position>
+        </employee>
+    </employees>
+</academy>
+
+
+
+
+
+
+
