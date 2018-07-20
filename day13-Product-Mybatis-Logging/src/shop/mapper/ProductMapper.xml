@@ -29,16 +29,18 @@
     
     <update id="update" parameterType="Product">
       UPDATE product p     
-         SET p.PRODNAME = #{prodName}
-           , p.PRICE    = #{price}
-           , p.QUANTITY = #{quantity}
-           , p.MODDATE  = sysdate
-       WHERE p.PRODCODE = #{prodCode}
+         SET p.prodname = #{prodName}
+           , p.price    = #{price}
+           , p.quantity = #{quantity}
+           , p.moddate  = sysdate
+       WHERE p.prodcode = #{prodCode}
     </update>
     
-    <delete id="deleteOne" parameterType="Product">
-	    DELETE product p 
+    <delete id="delete" parameterType="Product">
+	    DELETE product p
+	   <if test="prodCode != null">
 	     WHERE p.prodcode = #{prodCode}
+	   </if>
     </delete>
     
     <select id="selectAll" resultType="Product">

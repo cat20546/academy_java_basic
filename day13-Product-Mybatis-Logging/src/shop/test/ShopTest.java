@@ -77,11 +77,12 @@ public class ShopTest {
 		Product s002 = new Product("S002");
 		manager.add(s002);
 		
-		// 10. 전체 1건씩 모두 삭제
-		manager.remove(reebok);
-		manager.remove(nike);
-		manager.remove(crocs);
-		manager.remove(birkenstock);
+		// 10. 전체 삭제
+		manager.remove(null);
+//		manager.remove(reebok);
+//		manager.remove(nike);
+//		manager.remove(crocs);
+//		manager.remove(birkenstock);
 	}
 
 }

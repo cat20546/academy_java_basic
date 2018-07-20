@@ -129,10 +129,15 @@ public class Manager {
 		String message = null;
 		
 		try {
-			warehouse.remove(product);
+			int rmCnt = warehouse.remove(product);
 			
-			message = String.format("제품 정보[%s]삭제에 성공하였습니다."
-					, product.getProdCode());
+			if (product != null) {
+				message = String.format("제품 정보[%s]삭제에 성공하였습니다."
+						, product.getProdCode());
+			} else {
+				message = String.format("제품 정보[%d] 건을 "
+						              + "삭제하였습니다.", rmCnt); 
+			}
 			
 			reply = getReply("message");
 			

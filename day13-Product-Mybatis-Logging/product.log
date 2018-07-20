@@ -271,3 +271,607 @@
 2018-07-20 10:58:57,814 DEBUG .m.P.deleteOne [main] <==    Updates: 1
 2018-07-20 10:58:57,814 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2d9d4f9d]
 2018-07-20 10:58:57,814 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 765284253 to pool.
+2018-07-20 11:12:49,958 DEBUG .a.i.l.LogFactory [main] Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 11:12:50,031 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:12:50,032 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:12:50,032 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:12:50,032 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:12:50,111 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,319 DEBUG .a.i.d.p.PooledDataSource [main] Created connection 1054932644.
+2018-07-20 11:12:50,320 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,321 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,375 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:12:50,394 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:12:50,394 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,394 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,395 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,395 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,395 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,395 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:12:50,395 DEBUG .m.P.insert [main] ==> Parameters: S001(String), 슈퍼스타(String), 87200(Integer), 5(Integer)
+2018-07-20 11:12:50,397 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:12:50,397 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,397 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,399 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,399 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,399 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,399 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,399 DEBUG .m.P.isExists [main] ==> Parameters: S002(String)
+2018-07-20 11:12:50,400 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:12:50,400 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,400 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,400 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,400 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,400 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,400 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:12:50,401 DEBUG .m.P.insert [main] ==> Parameters: S002(String), 리복 로얄 테크큐 티(String), 42000(Integer), 20(Integer)
+2018-07-20 11:12:50,402 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:12:50,402 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,402 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,402 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,402 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,402 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,402 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,402 DEBUG .m.P.isExists [main] ==> Parameters: S003(String)
+2018-07-20 11:12:50,403 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:12:50,403 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,403 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,403 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,403 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,403 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,403 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:12:50,404 DEBUG .m.P.insert [main] ==> Parameters: S003(String), 나이키 탄준 샌들(String), 41300(Integer), 30(Integer)
+2018-07-20 11:12:50,405 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:12:50,405 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,405 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,405 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,405 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,405 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,405 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,405 DEBUG .m.P.isExists [main] ==> Parameters: S004(String)
+2018-07-20 11:12:50,406 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:12:50,406 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,406 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,406 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,406 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,406 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,407 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:12:50,407 DEBUG .m.P.insert [main] ==> Parameters: S004(String), 라이트라이드 샌들 우먼(String), 40200(Integer), 7(Integer)
+2018-07-20 11:12:50,408 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:12:50,409 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,409 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,410 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,410 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,410 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,410 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,410 DEBUG .m.P.isExists [main] ==> Parameters: S005(String)
+2018-07-20 11:12:50,410 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:12:50,411 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,411 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,411 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,411 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,411 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,411 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:12:50,411 DEBUG .m.P.insert [main] ==> Parameters: S005(String), 지제 에바(String), 29000(Integer), 15(Integer)
+2018-07-20 11:12:50,412 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:12:50,412 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,412 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,413 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,413 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,413 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,413 DEBUG .m.P.selectAll [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p 
+2018-07-20 11:12:50,413 DEBUG .m.P.selectAll [main] ==> Parameters: 
+2018-07-20 11:12:50,416 TRACE .m.P.selectAll [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:12:50,420 TRACE .m.P.selectAll [main] <==        Row: S001, 슈퍼스타, 87200, 5
+2018-07-20 11:12:50,421 TRACE .m.P.selectAll [main] <==        Row: S002, 리복 로얄 테크큐 티, 42000, 20
+2018-07-20 11:12:50,422 TRACE .m.P.selectAll [main] <==        Row: S003, 나이키 탄준 샌들, 41300, 30
+2018-07-20 11:12:50,422 TRACE .m.P.selectAll [main] <==        Row: S004, 라이트라이드 샌들 우먼, 40200, 7
+2018-07-20 11:12:50,422 TRACE .m.P.selectAll [main] <==        Row: S005, 지제 에바, 29000, 15
+2018-07-20 11:12:50,423 DEBUG .m.P.selectAll [main] <==      Total: 5
+2018-07-20 11:12:50,423 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,423 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,423 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,426 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,427 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,428 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,428 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,429 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:12:50,431 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:12:50,431 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:12:50,433 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:12:50,434 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,434 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,434 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,434 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,434 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,435 DEBUG .m.P.update [main] ==>  Preparing: UPDATE product p SET p.PRODNAME = ? , p.PRICE = ? , p.QUANTITY = ? , p.MODDATE = sysdate WHERE p.PRODCODE = ? 
+2018-07-20 11:12:50,435 DEBUG .m.P.update [main] ==> Parameters: 슈퍼스타(String), 75000(Integer), 5(Integer), S001(String)
+2018-07-20 11:12:50,436 DEBUG .m.P.update [main] <==    Updates: 1
+2018-07-20 11:12:50,436 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,436 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,437 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,437 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,437 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,437 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,437 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:12:50,438 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:12:50,438 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:12:50,438 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:12:50,438 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,439 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,439 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,440 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,440 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,440 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,440 DEBUG .m.P.selectOne [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,440 DEBUG .m.P.selectOne [main] ==> Parameters: S001(String)
+2018-07-20 11:12:50,441 TRACE .m.P.selectOne [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:12:50,441 TRACE .m.P.selectOne [main] <==        Row: S001, 슈퍼스타, 75000, 5
+2018-07-20 11:12:50,441 DEBUG .m.P.selectOne [main] <==      Total: 1
+2018-07-20 11:12:50,441 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,441 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,441 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,442 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,442 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,442 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,442 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,443 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:12:50,443 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:12:50,443 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:12:50,444 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:12:50,444 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,444 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,444 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,460 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,461 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,461 DEBUG .m.P.delete [main] ==>  Preparing: DELETE product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,461 DEBUG .m.P.delete [main] ==> Parameters: S001(String)
+2018-07-20 11:12:50,464 DEBUG .m.P.delete [main] <==    Updates: 1
+2018-07-20 11:12:50,464 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,464 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,465 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,465 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,465 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,465 DEBUG .m.P.selectAll [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p 
+2018-07-20 11:12:50,465 DEBUG .m.P.selectAll [main] ==> Parameters: 
+2018-07-20 11:12:50,466 TRACE .m.P.selectAll [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:12:50,466 TRACE .m.P.selectAll [main] <==        Row: S002, 리복 로얄 테크큐 티, 42000, 20
+2018-07-20 11:12:50,466 TRACE .m.P.selectAll [main] <==        Row: S003, 나이키 탄준 샌들, 41300, 30
+2018-07-20 11:12:50,467 TRACE .m.P.selectAll [main] <==        Row: S004, 라이트라이드 샌들 우먼, 40200, 7
+2018-07-20 11:12:50,467 TRACE .m.P.selectAll [main] <==        Row: S005, 지제 에바, 29000, 15
+2018-07-20 11:12:50,467 DEBUG .m.P.selectAll [main] <==      Total: 4
+2018-07-20 11:12:50,467 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,467 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,467 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,468 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,468 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,468 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,468 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,468 DEBUG .m.P.isExists [main] ==> Parameters: P007(String)
+2018-07-20 11:12:50,469 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:12:50,469 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,469 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,469 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,470 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,470 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,470 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,470 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,471 DEBUG .m.P.isExists [main] ==> Parameters: P007(String)
+2018-07-20 11:12:50,471 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:12:50,471 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,471 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,473 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,473 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,473 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,475 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,476 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,476 DEBUG .m.P.isExists [main] ==> Parameters: S002(String)
+2018-07-20 11:12:50,476 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:12:50,476 TRACE .m.P.isExists [main] <==        Row: S002
+2018-07-20 11:12:50,477 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:12:50,477 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,477 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,477 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:12:50,477 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:12:50,477 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:12:50,477 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,477 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:12:50,478 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,478 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:12:50,479 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:35,827 DEBUG .a.i.l.LogFactory [main] Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 11:17:35,906 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:17:35,907 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:17:35,907 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:17:35,907 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:17:35,984 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,148 DEBUG .a.i.d.p.PooledDataSource [main] Created connection 1054932644.
+2018-07-20 11:17:36,149 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,150 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,204 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:17:36,222 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:17:36,223 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,223 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,223 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,223 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,223 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,223 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:17:36,224 DEBUG .m.P.insert [main] ==> Parameters: S001(String), 슈퍼스타(String), 87200(Integer), 5(Integer)
+2018-07-20 11:17:36,226 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:17:36,226 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,226 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,227 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,228 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,228 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,228 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,228 DEBUG .m.P.isExists [main] ==> Parameters: S002(String)
+2018-07-20 11:17:36,229 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:17:36,229 TRACE .m.P.isExists [main] <==        Row: S002
+2018-07-20 11:17:36,230 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:17:36,230 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,230 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,230 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,231 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,231 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,232 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,232 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,232 DEBUG .m.P.isExists [main] ==> Parameters: S003(String)
+2018-07-20 11:17:36,233 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:17:36,233 TRACE .m.P.isExists [main] <==        Row: S003
+2018-07-20 11:17:36,233 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:17:36,233 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,233 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,233 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,234 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,234 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,234 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,234 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,234 DEBUG .m.P.isExists [main] ==> Parameters: S004(String)
+2018-07-20 11:17:36,235 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:17:36,235 TRACE .m.P.isExists [main] <==        Row: S004
+2018-07-20 11:17:36,235 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:17:36,235 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,236 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,236 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,236 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,236 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,236 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,236 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,237 DEBUG .m.P.isExists [main] ==> Parameters: S005(String)
+2018-07-20 11:17:36,237 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:17:36,238 TRACE .m.P.isExists [main] <==        Row: S005
+2018-07-20 11:17:36,238 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:17:36,238 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,239 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,239 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,239 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,239 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,239 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,239 DEBUG .m.P.selectAll [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p 
+2018-07-20 11:17:36,240 DEBUG .m.P.selectAll [main] ==> Parameters: 
+2018-07-20 11:17:36,243 TRACE .m.P.selectAll [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:17:36,248 TRACE .m.P.selectAll [main] <==        Row: S002, 리복 로얄 테크큐 티, 42000, 20
+2018-07-20 11:17:36,248 TRACE .m.P.selectAll [main] <==        Row: S003, 나이키 탄준 샌들, 41300, 30
+2018-07-20 11:17:36,249 TRACE .m.P.selectAll [main] <==        Row: S004, 라이트라이드 샌들 우먼, 40200, 7
+2018-07-20 11:17:36,249 TRACE .m.P.selectAll [main] <==        Row: S005, 지제 에바, 29000, 15
+2018-07-20 11:17:36,249 TRACE .m.P.selectAll [main] <==        Row: S001, 슈퍼스타, 87200, 5
+2018-07-20 11:17:36,249 DEBUG .m.P.selectAll [main] <==      Total: 5
+2018-07-20 11:17:36,250 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,250 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,250 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,252 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,252 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,252 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,253 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,253 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:17:36,254 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:17:36,254 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:17:36,254 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:17:36,255 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,255 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,255 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,255 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,256 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,256 DEBUG .m.P.update [main] ==>  Preparing: UPDATE product p SET p.PRODNAME = ? , p.PRICE = ? , p.QUANTITY = ? , p.MODDATE = sysdate WHERE p.PRODCODE = ? 
+2018-07-20 11:17:36,256 DEBUG .m.P.update [main] ==> Parameters: 슈퍼스타(String), 75000(Integer), 5(Integer), S001(String)
+2018-07-20 11:17:36,258 DEBUG .m.P.update [main] <==    Updates: 1
+2018-07-20 11:17:36,258 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,258 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,258 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,259 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,259 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,259 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,259 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:17:36,260 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:17:36,260 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:17:36,260 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:17:36,260 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,261 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,261 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,261 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,261 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,261 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,261 DEBUG .m.P.selectOne [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,262 DEBUG .m.P.selectOne [main] ==> Parameters: S001(String)
+2018-07-20 11:17:36,262 TRACE .m.P.selectOne [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:17:36,262 TRACE .m.P.selectOne [main] <==        Row: S001, 슈퍼스타, 75000, 5
+2018-07-20 11:17:36,262 DEBUG .m.P.selectOne [main] <==      Total: 1
+2018-07-20 11:17:36,263 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,263 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,263 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,263 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,263 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,263 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,263 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,264 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:17:36,264 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:17:36,264 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:17:36,264 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:17:36,264 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,265 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,265 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,281 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,281 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,281 DEBUG .m.P.delete [main] ==>  Preparing: DELETE product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,281 DEBUG .m.P.delete [main] ==> Parameters: S001(String)
+2018-07-20 11:17:36,282 DEBUG .m.P.delete [main] <==    Updates: 1
+2018-07-20 11:17:36,283 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,283 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,283 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,283 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,284 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,284 DEBUG .m.P.selectAll [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p 
+2018-07-20 11:17:36,284 DEBUG .m.P.selectAll [main] ==> Parameters: 
+2018-07-20 11:17:36,285 TRACE .m.P.selectAll [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:17:36,285 TRACE .m.P.selectAll [main] <==        Row: S002, 리복 로얄 테크큐 티, 42000, 20
+2018-07-20 11:17:36,285 TRACE .m.P.selectAll [main] <==        Row: S003, 나이키 탄준 샌들, 41300, 30
+2018-07-20 11:17:36,285 TRACE .m.P.selectAll [main] <==        Row: S004, 라이트라이드 샌들 우먼, 40200, 7
+2018-07-20 11:17:36,285 TRACE .m.P.selectAll [main] <==        Row: S005, 지제 에바, 29000, 15
+2018-07-20 11:17:36,286 DEBUG .m.P.selectAll [main] <==      Total: 4
+2018-07-20 11:17:36,286 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,286 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,286 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,287 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,287 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,287 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,287 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,287 DEBUG .m.P.isExists [main] ==> Parameters: P007(String)
+2018-07-20 11:17:36,288 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:17:36,288 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,288 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,288 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,289 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,289 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,289 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,289 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,290 DEBUG .m.P.isExists [main] ==> Parameters: P007(String)
+2018-07-20 11:17:36,290 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:17:36,291 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,291 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,291 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,292 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,292 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,292 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,292 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:17:36,292 DEBUG .m.P.isExists [main] ==> Parameters: S002(String)
+2018-07-20 11:17:36,293 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:17:36,293 TRACE .m.P.isExists [main] <==        Row: S002
+2018-07-20 11:17:36,293 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:17:36,293 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,293 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,293 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:17:36,294 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:17:36,294 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:17:36,294 DEBUG .m.P.delete [main] ==>  Preparing: DELETE product p 
+2018-07-20 11:17:36,294 DEBUG .m.P.delete [main] ==> Parameters: 
+2018-07-20 11:17:36,318 DEBUG .m.P.delete [main] <==    Updates: 4
+2018-07-20 11:17:36,318 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:17:36,318 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,394 DEBUG .a.i.l.LogFactory [main] Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2018-07-20 11:29:09,470 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:29:09,470 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:29:09,470 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:29:09,471 DEBUG .a.i.d.p.PooledDataSource [main] PooledDataSource forcefully closed/removed all connections.
+2018-07-20 11:29:09,528 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,706 DEBUG .a.i.d.p.PooledDataSource [main] Created connection 1054932644.
+2018-07-20 11:29:09,706 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,708 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,765 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:29:09,784 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:29:09,786 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,786 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,786 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,786 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,786 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,786 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:29:09,786 DEBUG .m.P.insert [main] ==> Parameters: S001(String), 슈퍼스타(String), 87200(Integer), 5(Integer)
+2018-07-20 11:29:09,788 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:29:09,788 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,789 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,790 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,790 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,790 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,790 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,790 DEBUG .m.P.isExists [main] ==> Parameters: S002(String)
+2018-07-20 11:29:09,790 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:29:09,790 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,790 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,790 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,790 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,790 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,790 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:29:09,790 DEBUG .m.P.insert [main] ==> Parameters: S002(String), 리복 로얄 테크큐 티(String), 42000(Integer), 20(Integer)
+2018-07-20 11:29:09,791 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:29:09,791 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,793 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,793 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,793 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,793 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,793 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,793 DEBUG .m.P.isExists [main] ==> Parameters: S003(String)
+2018-07-20 11:29:09,793 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:29:09,793 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,793 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,793 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,793 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,793 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,793 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:29:09,794 DEBUG .m.P.insert [main] ==> Parameters: S003(String), 나이키 탄준 샌들(String), 41300(Integer), 30(Integer)
+2018-07-20 11:29:09,796 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:29:09,796 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,796 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,796 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,796 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,797 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,797 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,797 DEBUG .m.P.isExists [main] ==> Parameters: S004(String)
+2018-07-20 11:29:09,798 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:29:09,798 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,798 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,798 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,798 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,798 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,799 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:29:09,799 DEBUG .m.P.insert [main] ==> Parameters: S004(String), 라이트라이드 샌들 우먼(String), 40200(Integer), 7(Integer)
+2018-07-20 11:29:09,800 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:29:09,801 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,801 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,801 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,801 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,802 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,802 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,802 DEBUG .m.P.isExists [main] ==> Parameters: S005(String)
+2018-07-20 11:29:09,802 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:29:09,803 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,803 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,803 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,803 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,803 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,803 DEBUG .m.P.insert [main] ==>  Preparing: INSERT INTO product ( prodcode , prodname , price , quantity) VALUES ( ? ,? ,? ,? ) 
+2018-07-20 11:29:09,803 DEBUG .m.P.insert [main] ==> Parameters: S005(String), 지제 에바(String), 29000(Integer), 15(Integer)
+2018-07-20 11:29:09,804 DEBUG .m.P.insert [main] <==    Updates: 1
+2018-07-20 11:29:09,804 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,804 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,805 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,805 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,805 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,805 DEBUG .m.P.selectAll [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p 
+2018-07-20 11:29:09,805 DEBUG .m.P.selectAll [main] ==> Parameters: 
+2018-07-20 11:29:09,888 TRACE .m.P.selectAll [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:29:09,892 TRACE .m.P.selectAll [main] <==        Row: S001, 슈퍼스타, 87200, 5
+2018-07-20 11:29:09,894 TRACE .m.P.selectAll [main] <==        Row: S002, 리복 로얄 테크큐 티, 42000, 20
+2018-07-20 11:29:09,894 TRACE .m.P.selectAll [main] <==        Row: S003, 나이키 탄준 샌들, 41300, 30
+2018-07-20 11:29:09,894 TRACE .m.P.selectAll [main] <==        Row: S004, 라이트라이드 샌들 우먼, 40200, 7
+2018-07-20 11:29:09,895 TRACE .m.P.selectAll [main] <==        Row: S005, 지제 에바, 29000, 15
+2018-07-20 11:29:09,895 DEBUG .m.P.selectAll [main] <==      Total: 5
+2018-07-20 11:29:09,895 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,895 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,895 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,897 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,897 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,897 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,898 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,898 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:29:09,899 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:29:09,899 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:29:09,900 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:29:09,900 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,900 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,900 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,901 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,901 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,901 DEBUG .m.P.update [main] ==>  Preparing: UPDATE product p SET p.PRODNAME = ? , p.PRICE = ? , p.QUANTITY = ? , p.MODDATE = sysdate WHERE p.PRODCODE = ? 
+2018-07-20 11:29:09,901 DEBUG .m.P.update [main] ==> Parameters: 슈퍼스타(String), 75000(Integer), 5(Integer), S001(String)
+2018-07-20 11:29:09,902 DEBUG .m.P.update [main] <==    Updates: 1
+2018-07-20 11:29:09,902 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,902 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,903 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,903 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,903 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,903 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,903 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:29:09,904 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:29:09,904 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:29:09,904 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:29:09,904 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,904 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,904 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,905 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,905 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,905 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,905 DEBUG .m.P.selectOne [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,905 DEBUG .m.P.selectOne [main] ==> Parameters: S001(String)
+2018-07-20 11:29:09,906 TRACE .m.P.selectOne [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:29:09,906 TRACE .m.P.selectOne [main] <==        Row: S001, 슈퍼스타, 75000, 5
+2018-07-20 11:29:09,906 DEBUG .m.P.selectOne [main] <==      Total: 1
+2018-07-20 11:29:09,906 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,906 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,906 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,907 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,908 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,908 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,908 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,908 DEBUG .m.P.isExists [main] ==> Parameters: S001(String)
+2018-07-20 11:29:09,909 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:29:09,909 TRACE .m.P.isExists [main] <==        Row: S001
+2018-07-20 11:29:09,909 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:29:09,909 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,909 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,909 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,925 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,926 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,926 DEBUG .m.P.delete [main] ==>  Preparing: DELETE product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,926 DEBUG .m.P.delete [main] ==> Parameters: S001(String)
+2018-07-20 11:29:09,928 DEBUG .m.P.delete [main] <==    Updates: 1
+2018-07-20 11:29:09,929 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,929 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,929 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,929 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,929 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,929 DEBUG .m.P.selectAll [main] ==>  Preparing: SELECT p.prodcode , p.prodname , p.price , p.quantity FROM product p 
+2018-07-20 11:29:09,929 DEBUG .m.P.selectAll [main] ==> Parameters: 
+2018-07-20 11:29:09,930 TRACE .m.P.selectAll [main] <==    Columns: PRODCODE, PRODNAME, PRICE, QUANTITY
+2018-07-20 11:29:09,930 TRACE .m.P.selectAll [main] <==        Row: S002, 리복 로얄 테크큐 티, 42000, 20
+2018-07-20 11:29:09,930 TRACE .m.P.selectAll [main] <==        Row: S003, 나이키 탄준 샌들, 41300, 30
+2018-07-20 11:29:09,931 TRACE .m.P.selectAll [main] <==        Row: S004, 라이트라이드 샌들 우먼, 40200, 7
+2018-07-20 11:29:09,931 TRACE .m.P.selectAll [main] <==        Row: S005, 지제 에바, 29000, 15
+2018-07-20 11:29:09,931 DEBUG .m.P.selectAll [main] <==      Total: 4
+2018-07-20 11:29:09,931 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,931 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,932 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,932 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,932 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,932 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,932 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,933 DEBUG .m.P.isExists [main] ==> Parameters: P007(String)
+2018-07-20 11:29:09,933 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:29:09,933 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,933 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,933 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,935 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,935 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,935 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,935 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,935 DEBUG .m.P.isExists [main] ==> Parameters: P007(String)
+2018-07-20 11:29:09,936 DEBUG .m.P.isExists [main] <==      Total: 0
+2018-07-20 11:29:09,936 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,936 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,936 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,937 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,937 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,937 DEBUG .a.i.t.j.JdbcTransaction [main] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,937 DEBUG .m.P.isExists [main] ==>  Preparing: SELECT p.prodcode FROM product p WHERE p.prodcode = ? 
+2018-07-20 11:29:09,937 DEBUG .m.P.isExists [main] ==> Parameters: S002(String)
+2018-07-20 11:29:09,938 TRACE .m.P.isExists [main] <==    Columns: PRODCODE
+2018-07-20 11:29:09,938 TRACE .m.P.isExists [main] <==        Row: S002
+2018-07-20 11:29:09,938 DEBUG .m.P.isExists [main] <==      Total: 1
+2018-07-20 11:29:09,938 DEBUG .a.i.t.j.JdbcTransaction [main] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,938 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,938 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
+2018-07-20 11:29:09,938 DEBUG .a.i.t.j.JdbcTransaction [main] Opening JDBC Connection
+2018-07-20 11:29:09,939 DEBUG .a.i.d.p.PooledDataSource [main] Checked out connection 1054932644 from pool.
+2018-07-20 11:29:09,939 DEBUG .m.P.delete [main] ==>  Preparing: DELETE product p 
+2018-07-20 11:29:09,939 DEBUG .m.P.delete [main] ==> Parameters: 
+2018-07-20 11:29:09,940 DEBUG .m.P.delete [main] <==    Updates: 4
+2018-07-20 11:29:09,940 DEBUG .a.i.t.j.JdbcTransaction [main] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ee0fea4]
+2018-07-20 11:29:09,940 DEBUG .a.i.d.p.PooledDataSource [main] Returned connection 1054932644 to pool.
