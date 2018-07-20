@@ -42,11 +42,11 @@ public class ShopTest {
 				new Product("S005", "지제 에바", 29000, 15);
 		
 		// 1. 매장에 도착한 제품을 입고
-//		manager.add(adidas);
-//		manager.add(reebok);
-//		manager.add(nike);
-//		manager.add(crocs);
-//		manager.add(birkenstock);
+		manager.add(adidas);
+		manager.add(reebok);
+		manager.add(nike);
+		manager.add(crocs);
+		manager.add(birkenstock);
 		
 		// 2. 입고된 제품 전체 확인
 		manager.getAllProducts();
@@ -54,34 +54,34 @@ public class ShopTest {
 		// 3. 아디다스 제품 수정
 		Product adidas2 = 
 				new Product("S001", "슈퍼스타", 75000, 5);
-//		manager.set(adidas2);
+		manager.set(adidas2);
 		
 		// 4. 수정된 아디다스 제품 수정 확인		
-//		manager.get(new Product("S001", null, 0, 0));
+		manager.get(new Product("S001", null, 0, 0));
 		
 		// 5. 판매 종료할 제품 폐기
-//		manager.remove(new Product("S001", null, 0, 0));
+		manager.remove(new Product("S001", null, 0, 0));
 		
 		// 6. 폐기 확인을 위해 전체 목록 재 조회
-//		System.out.println("====================");
-//		manager.getAllProducts();
+		System.out.println("====================");
+		manager.getAllProducts();
 		
 		// 7. 없는 코드 조회 ==> NotFoundException 발생 상황
 		Product p007 = new Product("P007");
-//		manager.get(p007);
+		manager.get(p007);
 		
 		// 8. 없는 제품 수정 ==> NotFoundException 발생 상황
-//		manager.set(p007);
+		manager.set(p007);
 		
 		// 9. 있는 제품 중복 추가 ==> DuplicateException
 		Product s002 = new Product("S002");
-//		manager.add(s002);
+		manager.add(s002);
 		
 		// 10. 전체 1건씩 모두 삭제
-//		manager.remove(reebok);
-//		manager.remove(nike);
-//		manager.remove(crocs);
-//		manager.remove(birkenstock);
+		manager.remove(reebok);
+		manager.remove(nike);
+		manager.remove(crocs);
+		manager.remove(birkenstock);
 	}
 
 }
