@@ -28,11 +28,20 @@
     </select>
     
     <update id="update" parameterType="Product">
-      UPDATE product p     
-         SET p.prodname = #{prodName}
-           , p.price    = #{price}
-           , p.quantity = #{quantity}
-           , p.moddate  = sysdate
+      UPDATE product p          
+      <set>
+           p.moddate  = SYSDATE
+        <if test="prodName != null">
+         , p.prodname = #{prodName}
+        </if>
+        <if test="price > 0">
+         , p.price    = #{price}
+        </if>
+        <if test="quantity > -1">
+         , p.quantity = #{quantity}
+        </if>
+      </set>
+      <trim prefix="SET" prefixOverrides="," />
        WHERE p.prodcode = #{prodCode}
     </update>
     

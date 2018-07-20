@@ -53,7 +53,7 @@ public class ShopTest {
 
 		// 3. 아디다스 제품 수정
 		Product adidas2 = 
-				new Product("S001", "슈퍼스타", 75000, 5);
+				new Product("S001", null, 75000, -1);
 		manager.set(adidas2);
 		
 		// 4. 수정된 아디다스 제품 수정 확인		
